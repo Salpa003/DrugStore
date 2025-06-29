@@ -29,6 +29,6 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println(products);
         req.setAttribute("products",products);
-        req.getRequestDispatcher(PathToJsp.create("home.jsp")).forward(req,resp);
+        req.getRequestDispatcher(PathToJsp.create("home")).forward(req,resp);
     }
 }
